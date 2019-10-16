@@ -1,0 +1,22 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "brain game",
+  "main": "index.js",
+  "bin": {
+    "brain": "./src/bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fessan/frontend-project-lvl1.git"
+  },
+  "author": "fessan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fessan/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Fessan/frontend-project-lvl1#readme"
+}
