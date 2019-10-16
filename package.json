@@ -1,13 +1,15 @@
 {
-  "name": "game",
+  "name": "gamefessan",
   "version": "1.0.0",
   "description": "brain game",
   "main": "index.js",
   "bin": {
-    "brain": "./src/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "dist"
