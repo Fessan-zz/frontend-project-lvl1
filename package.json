@@ -9,6 +9,9 @@
   "scripts": {
     "test": "test"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Fessan/frontend-project-lvl1.git"
@@ -18,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/Fessan/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Fessan/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/Fessan/frontend-project-lvl1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3"
+  }
 }
