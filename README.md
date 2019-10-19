@@ -6,4 +6,4 @@
 
 [![Build Status](https://travis-ci.org/Fessan/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/Fessan/frontend-project-lvl1)
 
-https://asciinema.org/a/Uw19bGXTVAKaU0kfm8QbjLpKq
+[![asciicast](https://asciinema.org/a/Uw19bGXTVAKaU0kfm8QbjLpKq.svg)](https://asciinema.org/a/Uw19bGXTVAKaU0kfm8QbjLpKq)
