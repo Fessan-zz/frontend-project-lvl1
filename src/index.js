@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 
+
 export const greeting = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
@@ -18,17 +19,13 @@ export const brainEven = () => {
     console.log(`Question: ${randomNumber}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === 'yes' && randomNumber % 2 === 0) {
-      console.log(counter, randomNumber);
       console.log('Correct!');
     } else if (answer === 'no' && randomNumber % 2 !== 0) {
       console.log('Correct!');
-      console.log(counter, randomNumber);
     } else if (answer === 'yes' && randomNumber % 2 !== 0) {
-      console.log(counter, randomNumber);
       console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
       break;
     } else if (answer === 'no' && randomNumber % 2 === 0) {
-      console.log(counter, randomNumber);
       console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
       break;
     } else if (answer !== 'no' || answer !== 'yes') {
