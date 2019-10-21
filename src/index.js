@@ -1,39 +1,30 @@
 import readlineSync from 'readline-sync';
+import { car, cdr } from '@hexlet/pairs';
 
-
-export const greeting = () => {
+const counterGame = 3;
+export const game = (gameDesc, gameInfo) => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-};
-
-export const brainEven = () => {
-  console.log('Welcome to the Brain Games!\nAnswer "yes" if the number is even, otherwise answer "no".');
+  console.log(gameDesc);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 
-  const counter = 3;
+  for (let i = 1; i <= counterGame; i += 1) {
+    const resultGameInfo = gameInfo();
+    const corretcNumber = car(resultGameInfo);
+    const correctAnswer = cdr(resultGameInfo);
 
-  for (let i = 1; i <= counter; i += 1) {
-    const randomNumber = Math.floor(Math.random() * 100);
-    console.log(`Question: ${randomNumber}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (answer === 'yes' && randomNumber % 2 === 0) {
+    console.log(`Question: ${corretcNumber}`);
+
+    const userAnswer = readlineSync.question('Your answer? ');
+
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
-    } else if (answer === 'no' && randomNumber % 2 !== 0) {
-      console.log('Correct!');
-    } else if (answer === 'yes' && randomNumber % 2 !== 0) {
-      console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
-      break;
-    } else if (answer === 'no' && randomNumber % 2 === 0) {
-      console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
-      break;
-    } else if (answer !== 'no' || answer !== 'yes') {
-      console.log('Allowed to answer only yes or no');
-      break;
-    }
-    if (i === counter) {
-      console.log(`Congratulations, ${name}!`);
+    } else {
+      console.log(`${userAnswer} is wrong answer ;(.Correct answer was ${correctAnswer}`);
+      console.log(`Let's try again, ${name}`);
+      return;
     }
   }
+  console.log(`Congratulations, ${name}!`);
 };
+export default game;
