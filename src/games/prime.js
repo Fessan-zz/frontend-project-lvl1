@@ -5,7 +5,6 @@ import { game } from '..';
 const gameDesc = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const prime = (num) => {
-
   if (num <= 1) {
     return false;
   }
@@ -25,5 +24,4 @@ const createPrimegame = () => {
 
   return cons(createQuestion, answerGame);
 };
-
-export default () => game(gameDesc,createPrimegame);
+export default () => game(gameDesc, createPrimegame);
