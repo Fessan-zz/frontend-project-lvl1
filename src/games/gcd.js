@@ -2,7 +2,7 @@ import { cons } from '@hexlet/pairs';
 import random from '../random';
 import { game } from '..';
 
-const gameDesc = 'Find the greatest common divisor of given numbers.';
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const findDivisor = (x, y) => {
   const iter = (divisor) => {
@@ -18,8 +18,8 @@ const createGcdGame = () => {
   const x = random(0, 100);
   const y = random(0, 100);
 
-  const createQuestion = `${x} ${y}`;
+  const newQuestion = `${x} ${y}`;
   const answerGame = String(findDivisor(x, y));
-  return cons(createQuestion, answerGame);
+  return cons(newQuestion, answerGame);
 };
-export default () => game(gameDesc, createGcdGame);
+export default () => game(gameDescription, createGcdGame);

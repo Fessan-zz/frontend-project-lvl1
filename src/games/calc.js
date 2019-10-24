@@ -2,21 +2,21 @@ import { cons } from '@hexlet/pairs';
 import random from '../random';
 import { game } from '..';
 
-const gameDesc = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
 
 const operators = '+-*';
 
-const calc = (x, y, operator) => {
-  if (operator === '+') {
-    return x + y;
+const calculator = (x, y, operator) => {
+  switch (operator) {
+    case '+':
+      return x + y;
+
+    case '-':
+      return x - y;
+
+    default:
+      return x * y;
   }
-  if (operator === '-') {
-    return x - y;
-  }
-  if (operator === '*') {
-    return x * y;
-  }
-  return false;
 };
 
 const createCalcGame = () => {
@@ -24,8 +24,8 @@ const createCalcGame = () => {
   const y = random(0, 100);
   const operator = operators[random(0, 2)];
 
-  const createQuestion = `${x} ${operator} ${y}`;
-  const answerGame = String(calc(x, y, operator));
-  return cons(createQuestion, answerGame);
+  const newQuestion = `${x} ${operator} ${y}`;
+  const answerGame = String(calculator(x, y, operator));
+  return cons(newQuestion, answerGame);
 };
-export default () => game(gameDesc, createCalcGame);
+export default () => game(gameDescription, createCalcGame);
