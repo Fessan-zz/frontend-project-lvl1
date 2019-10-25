@@ -4,12 +4,11 @@ import { game } from '..';
 
 const gameDescription = 'What number is missing in the progression?';
 const lengthProgression = 10;
-const setInterval = 9;
 
 const createProgGame = () => {
   const oneValue = random(0, 50);
   const diff = random(1, 10);
-  const hiddenValue = random(0, setInterval);
+  const hiddenValue = random(0, lengthProgression - 1);
   let progression = '';
 
   for (let i = 0; i < lengthProgression; i += 1) {
