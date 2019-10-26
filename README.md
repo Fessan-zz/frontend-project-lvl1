@@ -2,18 +2,14 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/cf32c7e514dc1a030fd7/maintainability)](https://codeclimate.com/github/Fessan/frontend-project-lvl1/maintainability)
 
-install brain game ```sudo npm link```
-
-
 [![Build Status](https://travis-ci.org/Fessan/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/Fessan/frontend-project-lvl1)
 
-[![asciicast](https://asciinema.org/a/Uw19bGXTVAKaU0kfm8QbjLpKq.svg)](https://asciinema.org/a/Uw19bGXTVAKaU0kfm8QbjLpKq)
+install brain game ```sudo npm link```
 
-[![asciicast](https://asciinema.org/a/8eclvmSvSy9QvRLpYJPowCcfU.svg)](https://asciinema.org/a/8eclvmSvSy9QvRLpYJPowCcfU)
+[![asciicast](https://asciinema.org/a/VyxbhLr64H0URM6kXvPJ3o2WW.svg)](https://asciinema.org/a/VyxbhLr64H0URM6kXvPJ3o2WW)
 
-[![asciicast](https://asciinema.org/a/JQs2dULalCkPFT2wNELDmkrv7.svg)](https://asciinema.org/a/JQs2dULalCkPFT2wNELDmkrv7)
+game Сalculator "What is the result of the expression?"
+run ```brain-calc```
 
-[![asciicast](https://asciinema.org/a/gxkNcrNkHw5q02bJ5PfiDA65F.svg)](https://asciinema.org/a/gxkNcrNkHw5q02bJ5PfiDA65F)
+[![asciicast](https://asciinema.org/a/DJIPeGObFVlXS6ZkmT9D35HrJ.svg)](https://asciinema.org/a/DJIPeGObFVlXS6ZkmT9D35HrJ)
 
-
-[![asciicast](https://asciinema.org/a/8suGQl08IuQ4FdpfZcP1VRZZQ.svg)](https://asciinema.org/a/8suGQl08IuQ4FdpfZcP1VRZZQ)
