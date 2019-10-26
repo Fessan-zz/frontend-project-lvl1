@@ -6,9 +6,9 @@ const gameDescription = 'Answer "yes" if the number is even, otherwise answer "n
 const even = (num) => num % 2 === 0;
 
 const createEvenGame = () => {
-  const newQuestion = random(0, 100);
-  const answerGame = even(newQuestion) ? 'yes' : 'no';
-  return cons(newQuestion, answerGame);
+  const question = random(0, 100);
+  const answerGame = even(question) ? 'yes' : 'no';
+  return cons(question, answerGame);
 };
 
 export default () => game(gameDescription, createEvenGame);

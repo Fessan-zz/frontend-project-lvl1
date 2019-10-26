@@ -14,15 +14,18 @@ const calculator = (x, y, operator) => {
     case '-':
       return x - y;
 
-    default:
+    case '*':
       return x * y;
+
+    default:
+      return null;
   }
 };
 
 const createCalcGame = () => {
   const x = random(0, 100);
   const y = random(0, 100);
-  const operator = operators[random(0, 2)];
+  const operator = operators[random(0, operators.length - 1)];
 
   const newQuestion = `${x} ${operator} ${y}`;
   const answerGame = String(calculator(x, y, operator));

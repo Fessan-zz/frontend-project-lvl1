@@ -18,9 +18,8 @@ const prime = (num) => {
 };
 
 const createPrimegame = () => {
-  const num = random(2, 100);
-  const newQuestion = `${num}`;
-  const answerGame = prime(num) ? 'yes' : 'no';
+  const newQuestion = random(2, 100);
+  const answerGame = prime(random(2, 100)) ? 'yes' : 'no';
 
   return cons(newQuestion, answerGame);
 };

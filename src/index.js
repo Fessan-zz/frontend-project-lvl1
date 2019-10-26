@@ -10,10 +10,10 @@ export const game = (gameDescription, getDataGame) => {
 
   for (let i = 1; i <= roundsCount; i += 1) {
     const resultDataGame = getDataGame();
-    const corretcNumber = car(resultDataGame);
+    const corretcValue = car(resultDataGame);
     const correctAnswer = cdr(resultDataGame);
 
-    console.log(`Question: ${corretcNumber}`);
+    console.log(`Question: ${corretcValue}`);
 
     const userAnswer = readlineSync.question('Your answer? ');
 

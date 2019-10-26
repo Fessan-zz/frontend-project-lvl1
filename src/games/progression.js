@@ -6,19 +6,19 @@ const gameDescription = 'What number is missing in the progression?';
 const lengthProgression = 10;
 
 const createProgGame = () => {
-  const oneValue = random(0, 50);
+  const firstValue = random(0, 50);
   const diff = random(1, 10);
-  const hiddenValue = random(0, lengthProgression - 1);
+  const hiddenIndexValue = random(0, lengthProgression - 1);
   let progression = '';
 
   for (let i = 0; i < lengthProgression; i += 1) {
-    if (i === hiddenValue) {
+    if (i === hiddenIndexValue) {
       progression = `${progression} ..`;
     } else {
-      progression = `${progression} ${oneValue + i * diff}`.trim();
+      progression = `${progression} ${firstValue + i * diff}`.trim();
     }
   }
-  const answerGame = String(oneValue + diff * hiddenValue);
+  const answerGame = String(firstValue + diff * hiddenIndexValue);
 
   return cons(progression, answerGame);
 };
