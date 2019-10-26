@@ -2,7 +2,9 @@
   "name": "gamefessan",
   "version": "1.0.0",
   "description": "brain game",
-  "keywords": ["game, brain, numbers"],
+  "keywords": [
+    "game, brain, numbers"
+  ],
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
