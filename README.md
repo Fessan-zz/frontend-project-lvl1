@@ -2,17 +2,60 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/cf32c7e514dc1a030fd7/maintainability)](https://codeclimate.com/github/Fessan/frontend-project-lvl1/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/cf32c7e514dc1a030fd7/test_coverage)](https://codeclimate.com/github/Fessan/frontend-project-lvl1/test_coverage)
-
 [![Build Status](https://travis-ci.org/Fessan/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/Fessan/frontend-project-lvl1)
 
-[![asciicast](https://asciinema.org/a/Uw19bGXTVAKaU0kfm8QbjLpKq.svg)](https://asciinema.org/a/Uw19bGXTVAKaU0kfm8QbjLpKq)
+install brain game 
 
-[![asciicast](https://asciinema.org/a/8eclvmSvSy9QvRLpYJPowCcfU.svg)](https://asciinema.org/a/8eclvmSvSy9QvRLpYJPowCcfU)
+```sudo npm link```
 
-[![asciicast](https://asciinema.org/a/JQs2dULalCkPFT2wNELDmkrv7.svg)](https://asciinema.org/a/JQs2dULalCkPFT2wNELDmkrv7)
+[![asciicast](https://asciinema.org/a/VyxbhLr64H0URM6kXvPJ3o2WW.svg)](https://asciinema.org/a/VyxbhLr64H0URM6kXvPJ3o2WW)
 
-[![asciicast](https://asciinema.org/a/gxkNcrNkHw5q02bJ5PfiDA65F.svg)](https://asciinema.org/a/gxkNcrNkHw5q02bJ5PfiDA65F)
+game Сalculator
 
 
-[![asciicast](https://asciinema.org/a/8suGQl08IuQ4FdpfZcP1VRZZQ.svg)](https://asciinema.org/a/8suGQl08IuQ4FdpfZcP1VRZZQ)
+"What is the result of the expression?"
+
+
+
+run ```brain-calc```
+
+[![asciicast](https://asciinema.org/a/DJIPeGObFVlXS6ZkmT9D35HrJ.svg)](https://asciinema.org/a/DJIPeGObFVlXS6ZkmT9D35HrJ)
+
+
+game Even
+
+'Answer "yes" if the number is even, otherwise answer "no".'
+
+```brain-even```
+
+[![asciicast](https://asciinema.org/a/RCVqrJ1ASt1OSCGzb0OjdSHdx.svg)](https://asciinema.org/a/RCVqrJ1ASt1OSCGzb0OjdSHdx)
+
+
+game Divisor of Given Numbers
+
+'Find the greatest common divisor of given numbers.'
+
+```brain-gcd```
+
+[![asciicast](https://asciinema.org/a/Wh8LyiiMkRnJOKczjE3rGAn8i.svg)](https://asciinema.org/a/Wh8LyiiMkRnJOKczjE3rGAn8i)
+
+
+game Prime
+
+
+'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+```brain-prime```
+
+[![asciicast](https://asciinema.org/a/AKIsoxoA9MUzP9JIlHzGLFO0X.svg)](https://asciinema.org/a/AKIsoxoA9MUzP9JIlHzGLFO0X)
+
+
+game Progression
+
+'What number is missing in the progression?'
+
+``` brain-prog```
+
+[![asciicast](https://asciinema.org/a/mSfyfZXIXp8x0zjStuVsanrNQ.svg)](https://asciinema.org/a/mSfyfZXIXp8x0zjStuVsanrNQ)
+
+
