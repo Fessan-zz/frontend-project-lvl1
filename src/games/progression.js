@@ -1,26 +1,26 @@
 import { cons } from '@hexlet/pairs';
 import random from '../random';
-import { game } from '..';
+import playGame from '..';
 
 const gameDescription = 'What number is missing in the progression?';
 const lengthProgression = 10;
 
-const createProgGame = () => {
+const gameCreateProgression = () => {
   const firstValue = random(0, 50);
   const diff = random(1, 10);
   const hiddenIndexValue = random(0, lengthProgression - 1);
-  let progression = '';
+  let question = '';
 
   for (let i = 0; i < lengthProgression; i += 1) {
     if (i === hiddenIndexValue) {
-      progression = `${progression} ..`;
+      question = `${question} ..`;
     } else {
-      progression = `${progression} ${firstValue + i * diff}`.trim();
+      question = `${question} ${firstValue + i * diff}`.trim();
     }
   }
-  const answerGame = String(firstValue + diff * hiddenIndexValue);
+  const gameAnswer = String(firstValue + diff * hiddenIndexValue);
 
-  return cons(progression, answerGame);
+  return cons(question, gameAnswer);
 };
 
-export default () => game(gameDescription, createProgGame);
+export default () => playGame(gameDescription, gameCreateProgression);

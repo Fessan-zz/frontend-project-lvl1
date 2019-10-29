@@ -1,12 +1,12 @@
 import { cons } from '@hexlet/pairs';
 import random from '../random';
-import { game } from '..';
+import playGame from '..';
 
 const gameDescription = 'What is the result of the expression?';
 
 const operators = '+-*';
 
-const calculator = (x, y, operator) => {
+const calculate = (x, y, operator) => {
   switch (operator) {
     case '+':
       return x + y;
@@ -22,13 +22,13 @@ const calculator = (x, y, operator) => {
   }
 };
 
-const createCalcGame = () => {
+const gameCrateCalc = () => {
   const x = random(0, 100);
   const y = random(0, 100);
   const operator = operators[random(0, operators.length - 1)];
 
-  const newQuestion = `${x} ${operator} ${y}`;
-  const answerGame = String(calculator(x, y, operator));
-  return cons(newQuestion, answerGame);
+  const question = `${x} ${operator} ${y}`;
+  const gameAnswer = String(calculate(x, y, operator));
+  return cons(question, gameAnswer);
 };
-export default () => game(gameDescription, createCalcGame);
+export default () => playGame(gameDescription, gameCrateCalc);

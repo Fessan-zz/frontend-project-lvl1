@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
 
 const roundsCount = 3;
-export const game = (gameDescription, getDataGame) => {
+export default (gameDescription, getDataGame) => {
   console.log('Welcome to the Brain Games!');
   console.log(gameDescription);
   const name = readlineSync.question('May I have your name? ');
@@ -27,4 +27,3 @@ export const game = (gameDescription, getDataGame) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-export default game;
