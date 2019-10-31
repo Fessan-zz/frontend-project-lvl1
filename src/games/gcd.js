@@ -14,7 +14,7 @@ const findGcd = (x, y) => {
   return iter(Math.min(x, y));
 };
 
-const gameCreateGcd = () => {
+const gameCreatedGcd = () => {
   const x = random(0, 100);
   const y = random(0, 100);
 
@@ -22,4 +22,4 @@ const gameCreateGcd = () => {
   const gameAnswer = String(findGcd(x, y));
   return cons(question, gameAnswer);
 };
-export default () => playGame(gameDescription, gameCreateGcd);
+export default () => playGame(gameDescription, gameCreatedGcd);

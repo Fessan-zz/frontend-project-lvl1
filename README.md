@@ -4,9 +4,7 @@
 
 [![Build Status](https://travis-ci.org/Fessan/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/Fessan/frontend-project-lvl1)
 
-install brain game 
 
-```sudo npm link```
 
 [![asciicast](https://asciinema.org/a/VyxbhLr64H0URM6kXvPJ3o2WW.svg)](https://asciinema.org/a/VyxbhLr64H0URM6kXvPJ3o2WW)
 

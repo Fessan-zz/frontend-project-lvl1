@@ -5,22 +5,22 @@ import playGame from '..';
 const gameDescription = 'What number is missing in the progression?';
 const lengthProgression = 10;
 
-const gameCreateProgression = () => {
+const gameCreatedProgression = () => {
   const firstValue = random(0, 50);
   const diff = random(1, 10);
-  const hiddenIndexValue = random(0, lengthProgression - 1);
+  const hiddenValueIndex = random(0, lengthProgression - 1);
   let question = '';
 
   for (let i = 0; i < lengthProgression; i += 1) {
-    if (i === hiddenIndexValue) {
+    if (i === hiddenValueIndex) {
       question = `${question} ..`;
     } else {
       question = `${question} ${firstValue + i * diff}`.trim();
     }
   }
-  const gameAnswer = String(firstValue + diff * hiddenIndexValue);
+  const gameAnswer = String(firstValue + diff * hiddenValueIndex);
 
   return cons(question, gameAnswer);
 };
 
-export default () => playGame(gameDescription, gameCreateProgression);
+export default () => playGame(gameDescription, gameCreatedProgression);

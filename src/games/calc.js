@@ -22,7 +22,7 @@ const calculate = (x, y, operator) => {
   }
 };
 
-const gameCrateCalc = () => {
+const gameCreatedСalculator = () => {
   const x = random(0, 100);
   const y = random(0, 100);
   const operator = operators[random(0, operators.length - 1)];
@@ -31,4 +31,4 @@ const gameCrateCalc = () => {
   const gameAnswer = String(calculate(x, y, operator));
   return cons(question, gameAnswer);
 };
-export default () => playGame(gameDescription, gameCrateCalc);
+export default () => playGame(gameDescription, gameCreatedСalculator);
